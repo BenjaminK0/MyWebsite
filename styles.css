@@ -1,0 +1,294 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .cardo-regular {
+    font-family: "Cardo", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  section
+  {
+    height: 100vh;
+    scroll-snap-align: start;
+    
+  }
+
+
+  .big-container
+  {
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
+  .background-container {
+    background-image: url("images/Background\ Photo.jpg"); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: #fff;
+  }
+
+  /* Header Styling */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #d9d9d9;
+  }
+
+  /* Logo/Text on the Left */
+  .logo {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Glacial Indifference', sans-serif;
+  }
+
+  /* Navigation Links on the Right */
+  nav {
+    display: flex;
+    gap: 50px;
+  }
+
+  nav a {
+    color: #d9d9d9;
+    text-decoration: none;
+    font-size: 2em;
+    transition: color 0.3s ease;
+    font-family: 'Glacial Indifference', sans-serif;
+    letter-spacing: .3rem;
+  }
+
+  /* Hover Effect for Links */
+  nav a:hover {
+    color: #8fae39;
+  }
+
+  .main-content 
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: calc(100vh - 80px); /* Full height minus header height */
+    text-align: center;
+    padding: 5rem;
+  }
+
+  
+  /* Inner White Border for Circle */
+  .inner-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  /* Image in Circle */
+  .inner-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  
+  
+  
+  /* Text Below the Circle */
+  .main-heading {
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: #d9d9d9;
+    font-family: 'Glacial Indifference', sans-serif;
+  }
+
+  .sub-heading {
+    font-size: 2em;
+    color: #d9d9d9;
+    font-family: 'Glacial Indifference', sans-serif;
+  }
+  .arrow
+{
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+
+  /**
+   * Dark Arrow Down
+   */
+  background-image: url("images/icons8-sort-down-100.png");
+  background-size: contain;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+  /*About Section*/
+  .SkillsPage {
+    background-color: #8fae39;
+  }
+
+  .ProjectsPage
+  {
+    background: rgb(143,174,57);
+    background: linear-gradient(180deg, rgba(143,174,57,1) 0%, rgba(0,0,0,1) 100%);
+  }
+.AboutPage{
+
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(143,174,57,1) 100%);
+}
+
+  .about-container
+  {
+    display: flex;
+  }
+
+  .ProfileImage img {
+    width: 26rem;
+    height: 26rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+/* Right Section Styling */
+.about-right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+ 
+}
+
+.about-buttons
+{
+  margin-top: 8.5rem;
+}
+
+.ellipse-button {
+  display: inline-block; /* Ensures it works for <a> tag */
+  width: 220px; /* Increased width */
+  padding: 20px; /* Increased padding for larger button */
+  margin-left: 5rem;
+  border: none;
+  border-radius: 60px; /* Increased border-radius for a rounder look */
+  color: #fff;
+  font-size: 18px; /* Larger font size */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Glacial Indifference', sans-serif;
+  letter-spacing: .2rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: #363829;
+}
+
+
+.ellipse-button:hover{
+  background-color: #88a33f;
+}
+
+
+
+
+
+/*Left side of About*/
+
+.about-left-section
+{
+  margin: 5rem 0 0 5rem;
+}
+
+.profileIcons a
+{
+width: 1rem;
+height: 1rem;
+ gap: 1rem;
+ margin-left: 4rem;
+ 
+ 
+}
+
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.profileIcons a img {
+  display: inline-block; /* Ensures the image behaves like a button */
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.profileIcons a img:hover {
+  cursor: pointer;
+  animation-name: bounce;
+}
+
+/*Middle Section of About*/
+
+.about-center-section
+{
+  margin: 5rem 0 0 1.8rem;
+  
+}
+
+.about-center-section h1{
+   font-family: 'Glacial Indifference', sans-serif;
+   color: white;
+   font-size: 2rem;
+}
+
+.about-center-section h2{
+  font-family: 'Glacial Indifference', sans-serif;
+   color: #d9d9d9;
+   font-size: 1rem;
+   font-weight: 0;
+   letter-spacing: .25rem;
+}
+
+.about-center-section p{
+  margin-top: 1rem;
+  gap: 1rem;
+  font-size: 1.5rem;
+  font-family:  "Cardo", serif;
+  color: white;
+  width: 30rem;
+}
+
