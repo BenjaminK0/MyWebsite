@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben's Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
+    <a target="_blank" href="https://icons8.com/icon/16773/sort-down"></a><a target="_blank" href="https://icons8.com"></a>           
+</head>
+<body>
+  <div class="big-container">
+<div class="background-container">
+    <!---- Header ---->
+    <section class="HomePage">
+      <header>
+          <!-- Logo/Text on the Left -->
+          <div class="logo">Benjamin K.</div>
+        
+          <!-- Navigation Links on the Right -->
+          <nav>
+            <a href="#section1">About</a>
+            <a href="#section2">Skills</a>
+            <a href="#section3">Projects</a>
+            <a href="#section4">Resume</a>
+          </nav>
+        </header>
+    <!----Home Page ----> 
+   
+        <div class="main-content">
+            <!-- Circle Image -->
+            <div class="outer-circle">
+                <div class="inner-circle">
+                  <img src="images/ProfilePhoto.jpeg" alt="Profile Image">
+                </div>
+              
+          </div>
+        
+            <!-- Name and Title -->
+            <h1 class="main-heading">Benjamin W. Kaliope</h1>
+            <p class="sub-heading">Computer & Electrical Engineer</p>
+            <div class="arrow bounce"></div>
+          </div>
+      </section>
+
+        </div>
+<!----About Page ----> 
+<section class="AboutPage" id="section1">
+<div class="about-container">
+  <!---Left section--->
+  <div class="about-left-section">
+    <div class="ProfileImage">
+      <img src="images/IMG_6954.PNG" alt="">
+    </div>
+    <div class="profileIcons">
+      <a href="https://x.com/BenjaminKaliope" target="_blank"><img src="images/icons8-twitterx.svg" alt=""></a>
+      <a href="https://github.com/BenjaminK0" target="_blank"><img src="images/icons8-github.svg" alt=""></a>
+      <a href="https://www.linkedin.com/in/benjaminkaliope/" target="_blank"><img src="images/icons8-linkedin.svg" alt=""></a>
+    </div>
+  </div>
+<!----MidSection-->
+<div class="about-center-section">
+  <h1>Benjamin Kaliope</h1>
+  <h2>University of South Carolina / 2024-2028</h2>
+  <p>University of South Carolina student majoring in Computer Engineering with a minor in Electrical Engineering.</p>
+  <p>I am in the Association for Computing Machinery club. In this club, we practice technical interview questions and compete in programming competitions.</p>
+  <p>Before enrolling in university, I worked on a yearlong website development project for a startup in Greenville, documenting and recording the entire process. </p>
+</div>
+
+<!---Right section--->
+<div class="about-right-section">
+  <div class="about-buttons">
+  <a class="ellipse-button" href="#section2">Skills</a>
+  <a class="ellipse-button" class= "project-button" href="#section3">Projects</a>
+  <a class="ellipse-button" class = "resume-button" href="#section4">Resume</a>
+</div>
+</div>
+
+
+
+</div>
+
+
+</section>
+<!---- Skill Page ----> 
+<section class="SkillsPage" id="section2">
+<h1>Skills</h1>
+</section>
+
+
+
+
+
+<!----Projects Page ----> 
+<section class="ProjectsPage" id="section3">
+<h1>Projects</h1>
+</section>
+
+
+
+
+
+<!----Resume Page----> 
+<section class="ResumePage" id="section4">
+<h2>Resume & More</h2>
+</section>
+
+
+
+
+
+
+
+<!----Contact Page----> 
+<section class="ContactPage">
+<h3>Contact</h3>
+</section>
+
+
+
+
+
+
+</div>
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+</body>
+</html>
